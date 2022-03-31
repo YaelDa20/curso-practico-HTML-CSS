@@ -1,0 +1,56 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration:none;
+    cursor:pointer; /*Ponerle la manita en lugar de la flecha*/
+}
+
+.header{
+    width:100%;
+    height:60px;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: flex-end; /*Mandar elementos a un costado o a otro -> alineacion del contenido*/
+    text-align: right;
+}
+
+.header-nav__list{
+    width: 250px;
+    height: auto;   /*-> Altura del padre */
+    display: flex;
+    list-style: none; /*Quitar la linea de debajo del indicador*/
+    justify-content:center;
+    align-items: center;
+
+}
+.header-nav__item{
+    margin: 0px 10px;
+    display: inline-block;
+}
+
+.header-nav__item a{
+    margin-right: 10px;
+    color:black;
+}
+
+nav .header-nav__list #menu-item{
+    background-image: url("https://static.thenounproject.com/png/756729-200.png");
+    background-repeat: no-repeat; /*Que no se repita la imagen*/
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+
+nav .header-nav__item img{
+    border-radius: 50%;    /*Hacer un circulo*/
+    margin-left: 10px;
+}
+/*Google icon menu -> Menu usado en el proyecto*/
